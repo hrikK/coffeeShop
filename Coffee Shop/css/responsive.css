@@ -1,0 +1,395 @@
+@media only screen and (max-width: 1149px) {
+    .text-part h2 {
+        padding: 15px 10px;
+        width: 30%;
+    }
+    .text-part p {
+        width: 85%;
+    }
+
+
+    header .nav-center {
+        width: 20%;
+    }
+    header .nav-content {
+        width: 80%;
+    }
+
+    
+    .contact .contact-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .contact .contact-right {
+        width: 63%;
+        padding: 30px 35px;
+        margin-top: 70px;
+    }
+    .contact .contact-right .contact-svg-box div {
+        margin: 45px 0;
+    }
+    .contact .contact-right svg {
+        height: 140px;
+        width: 140px;
+    }
+    .contact .contact-left {
+        width: 63%;
+        padding: 50px 70px;
+    }  
+}
+
+@media only screen and (max-width: 960px) {
+    .text-part h2 {
+        background-color: inherit;
+        color: rgb(95, 45, 45);
+        width: 35%;
+        padding-bottom: 8px;
+        border-radius: 0px;
+        border-bottom: rgb(95, 45, 45) solid 5px;
+}
+    .text-part p {
+        font-size: 1.1em;
+        width: 82%;
+        margin-top: 30px;
+        line-height: 2em;
+    }
+
+
+    header {
+        padding: 5px 80px 5px 75px;
+    }
+    header .nav-center {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    header .logo {
+        height: 70px;
+        width: 70px;
+        padding-top: 9px;
+    }
+    header .logo img {
+        width: 108%;
+        height: 77%;
+    }
+    header .nav-content a {
+        margin-top: 25px;
+        padding: 0px 15px;
+    }
+    header .nav-content {
+        display: none;
+    }
+
+    header .menubtn-box {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    header .menu-btn {
+        background: url(../img/svg/menu.svg) no-repeat;
+        background-size: cover;
+        height: 28px;
+        width: 28px;
+        text-align: right;
+        cursor: pointer;
+        transition: .5s;
+    }    
+    header .menu-btn.menu-clicked {
+        background: url(../img/svg/close.svg);
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transition: transform .5s;
+        -webkit-transition: transform .5s;
+        -moz-transition: transform .5s;
+        -o-transition: transform .5s;
+    }
+    header .nav-content.menu-clicked {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        height: calc(56vh - 80px);
+        background-color: rgb(219, 210, 210);
+        animation-name: navbar;
+        animation-duration: .4s;
+    }
+    header .nav-content {
+        animation-name: navbar-out;
+        animation-duration: .5s;
+    }
+    @keyframes navbar {
+        from {
+            height: 0px;
+        }
+        to {
+            height: calc(56vh - 80px);
+        }
+
+    }
+
+
+
+    .bg {
+        height: 90vh;
+    }
+    .bg .text-part h3 {
+        font-size: 2.8em;
+    }
+    .bg .text-part p {
+        font-size: 1em;
+        margin-top: 7px;
+        width: 80%;
+    }
+
+
+    .about {
+        padding: 50px 0;
+    }
+
+
+    .menu {
+        padding: 50px 0 80px 0; 
+    }
+    .menu .menu-main-box {
+        margin-top: 20px;
+    }
+    .menu .img-box {
+        width: 350px;
+        height: 325px;
+    }
+    .menu .menu-list-arrow {
+        right: 45px;
+    }
+    
+    
+    .contact .contact-left {
+        width: 70%;
+        padding: 40px;
+        height: 506px;
+    }  
+    .contact .contact-content .contact-left h4{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .contact .contact-left input, .contact .contact-left textarea{
+        font-size: 1.2em;
+        padding: 6px 0 18px 3px;
+        margin-bottom: 15px;
+        width: 90%;
+    }
+
+    .contact .contact-content .contact-right h4{
+        font-size: 1.4em;
+    }
+    .contact .contact-right {
+        width: 70%;
+        padding: 40px 55px 30px 48px;
+        margin-top: 60px;
+    }
+    .contact .contact-right .contact-svg-box div {
+        margin: 35px 0;
+    }
+    .contact .contact-right svg {
+        height: 122px;
+        width: 120px;
+    }
+    .contact .contact-right svg:active {
+        fill: white;
+    }
+
+
+    footer {
+        justify-content: center;
+    } 
+    footer .foot-right {
+        margin-top: 25px;
+    }
+    footer .foot-right .copyright-text a:active{
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .text-part h2 {
+        font-size: 1.1em;
+        width: 40%;
+        padding-bottom: 5px;
+        border-radius: 0px;
+        border-bottom: rgb(95, 45, 45) solid 2px;
+    }
+    .text-part p {
+        font-size: .8em;
+        width: 85%;
+        margin-top: 20px;
+        line-height: 2em;
+    }
+
+
+    
+    header {
+        padding: 5px 45px;
+    }
+    header .logo {
+        height: 60px;
+        width: 60px;
+    }
+    header .menu-btn {
+        height: 25px;
+        width: 25px;
+    }
+    header .nav-content.menu-clicked {
+        top: 70px;
+        height: calc(56vh - 70px);
+    }
+    header .nav-content {
+        animation-name: navbar-out;
+        animation-duration: .7s;
+    }
+    @keyframes navbar {
+        from {
+            height: 0px;
+        }
+        to {
+            height: calc(56vh - 70px);
+        }
+
+    }
+
+
+    .bg {
+        height: 75vh;
+    }
+    .bg .text-part h3 {
+        font-size: 1.6em;
+    }
+    .bg .text-part p {
+        font-size: .7em;
+        margin-top: 4px;
+        width: 92%;
+    }
+    .bg .btn, .btn:visited{
+        font-size: .8em;
+        padding: 4px 11px;
+        margin-top: -10px;
+    }
+
+
+    .about {
+        padding: 20px 0;
+    }
+
+
+    
+    .menu {
+        padding: 50px 0 80px 0; 
+    }
+    .menu .menu-content {
+        align-items: center;
+        margin-top: -25px;
+        justify-content: center;
+    }
+    .menu .menu-content .menu-box {
+        border: 5px solid rgb(95, 45, 45);
+        margin: 0px;
+    }
+    .menu .menu-content .menu-box h4{
+        font-size: 1.2em;
+        padding: 7px 0;
+        border-top: solid rgb(95, 45, 45) 3px;
+    }
+    .menu .img-box {
+        width: 220px;
+        height: 220px;
+    }
+    .menu .menu-list-arrow {
+        height: 110px;
+        width: 150px;
+        bottom: 190px;
+        right: 22px;
+    }
+    .menu .menu-list {
+        padding: 13px 0 30px 30px;
+        margin-top: 47px;
+    }
+    .menu .menu-sbox {
+        width: 115%;
+    }
+    .menu .menu-list h4{
+        font-size: .9em;
+    }
+    .menu .menu-list li {
+        font-size: .75em;
+    }
+    .menu .menu-list .btn , .btn:visited {
+        font-size: .8em;
+        padding: 5px 0;
+    }
+    .menu .menu-main-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+
+
+    .contact {
+        padding: 20px 0 35px 0;
+    }
+    .contact .contact-left {
+        width: 80%;
+        padding: 30px 15px 0px 15px;
+        height: 365px;
+    }  
+    .contact .contact-content .contact-left h4{
+        font-size: .9em;
+    }
+    .contact .contact-left input, .contact .contact-left textarea{
+        font-size: .8em;
+        padding: 4px 0 10px 3px;
+        width: 80%;
+    }
+    .contact .contact-left .btn {
+        font-size: .9em;
+        padding: 7px 15px;
+    }
+
+    .contact .contact-content .contact-right h4{
+        font-size: 1em;
+    }
+    .contact .contact-right {
+        width: 80%;
+        padding: 30px 55px 30px 48px;
+        margin-top: 30px;
+        height: 365px;
+    }
+    .contact .contact-right .contact-svg-box div {
+        margin: 40px 0;
+    }
+    .contact .contact-right svg {
+        height: 55px;
+    }
+
+    
+    footer {
+        padding: 13px 0;
+    }
+    footer .foot-left .foot-text {
+        margin: 5px 0 0 7px;
+    }
+    footer .foot-left, footer .foot-right .copyright-text {
+        font-size: .7em;
+    }
+    footer .foot-left .foot-text span {
+        margin-bottom: 2px;
+        margin-left: 15px
+    }
+    footer .foot-right .copyright-text a{
+        font-size: .9em;
+    }
+}
